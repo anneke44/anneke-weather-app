@@ -1,11 +1,10 @@
 import "./App.css";
+import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h2>Welcome to the Anneke Weather App</h2>
+      <Footer />
     </div>
   );
 }
-
-export default App;
