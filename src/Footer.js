@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="Footer">
       <p>© 2025 Anneke Weather App.</p>
       <p>
-        Built with ❤️ using React. This project is open-sourced on{" "}
+        Built by Anneke Viljoen using React. This project is open-sourced on{" "}
         <a
           href="https://github.com/anneke44/anneke-weather-app"
           target="_blank"
