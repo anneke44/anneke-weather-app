@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <footer className="Footer">
-      <p>© 2025 Anneke Weather App.</p>
+      <hr />
       <p>
         Built by Anneke Viljoen using React. This project is open-sourced on{" "}
         <a
