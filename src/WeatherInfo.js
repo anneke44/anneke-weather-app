@@ -22,7 +22,7 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="d-flex justify-content-around align-items-center">
             <div>
-              <WeatherIcon icon={props.weatherData.icon} />{" "}
+              <WeatherIcon icon={props.weatherData.icon} size={56} />{" "}
             </div>{" "}
             <div>
               <WeatherTemperature celsius={props.weatherData.temperature} />
@@ -35,7 +35,7 @@ export default function WeatherInfo(props) {
             <li>Wind: {props.weatherData.wind}km/h</li>
           </ul>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }
