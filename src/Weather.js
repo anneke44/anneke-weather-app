@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -11,19 +11,19 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       location: response.data.city,
-      date: new Date(response.data.time * 1000),
       weather: response.data.condition.description,
       temperature: Math.round(response.data.temperature.current),
       feel: Math.round(response.data.temperature.feels_like),
       humidity: response.data.temperature.humidity,
       wind: Math.round(response.data.wind.speed),
       icon: response.data.condition.icon_url,
+      date: new Date(response.data.time * 1000),
     });
-    console.log(response.data);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
+    // event.target.reset(); // Reset the form after submission
     search();
   }
 
@@ -54,26 +54,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h1>{weatherData.location}</h1>
-        <ul>
-          <li>
-            <FormattedDate date={weatherData.date} />
-          </li>
-          <li>{weatherData.weather}</li>
-        </ul>
-        <div className="row">
-          <div className="col-6">
-            <img src={weatherData.icon} alt="cloudy" />{" "}
-            {weatherData.temperature}°C
-          </div>
-          <div className="col-6">
-            <ul>
-              <li>{weatherData.feel}</li>
-              <li>{weatherData.humidity}</li>
-              <li>{weatherData.wind}</li>
-            </ul>
-          </div>
-        </div>
+        <WeatherInfo weatherData={weatherData} />
       </div>
     );
   } else {
