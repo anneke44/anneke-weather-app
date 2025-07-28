@@ -4,10 +4,3 @@
   --tertiary-color: #dad3be;
   --high-light-color: #6b8a7a;
 }
-
-.App {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 1px solid black;
-}

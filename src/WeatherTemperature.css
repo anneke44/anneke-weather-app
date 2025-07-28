@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #254336;
+  --secondary-color: #b7b597;
+  --tertiary-color: #dad3be;
+  --high-light-color: #6b8a7a;
+}
+
+.WeatherTemperature {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 24px;
+}
+.WeatherTemperature a {
+  text-decoration: none;
+  color: var(--high-light-color);
+}

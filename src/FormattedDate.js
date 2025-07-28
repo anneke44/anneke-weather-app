@@ -22,7 +22,7 @@ export default function FormattedDate(props) {
   }
   return (
     <div className="FormattedDate">
-      {day} {hour}:{minute}
+      {day} - {hour}:{minute}
     </div>
   );
 }

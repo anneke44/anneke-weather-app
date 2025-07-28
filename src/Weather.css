@@ -1,3 +1,23 @@
+:root {
+  --primary-color: #254336;
+  --secondary-color: #b7b597;
+  --tertiary-color: #dad3be;
+  --high-light-color: #6b8a7a;
+}
+
 .Weather {
   margin: 30px auto 30px;
+}
+.Weather .form-control {
+  border-color: var(--high-light-color);
+}
+.Weather .btn-branding {
+  background-color: var(--primary-color);
+  color: white;
+  height: 38px;
+  width: 100%;
+}
+.Weather .btn-branding:hover {
+  background-color: var(--primary-color);
+  opacity: 0.9;
 }

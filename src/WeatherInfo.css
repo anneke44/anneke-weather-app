@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #254336;
+  --secondary-color: #b7b597;
+  --tertiary-color: #dad3be;
+  --high-light-color: #6b8a7a;
+}
+
+.WeatherInfo {
+  font-family: sans-serif;
+}
+.WeatherInfo h1 {
+  font-size: 36px;
+  margin: 30px auto 10px;
+}
+.WeatherInfo ul {
+  list-style: none;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+.WeatherInfo-conditions {
+  color: var(--secondary-color);
+}
+.WeatherInfo-header {
+  padding: 0 30px;
+}
