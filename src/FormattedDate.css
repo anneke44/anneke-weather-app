@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #254336;
+  --secondary-color: #b7b597;
+  --tertiary-color: #dad3be;
+  --high-light-color: #6b8a7a;
+}
+
 .FormattedDate {
   font-family: sans-serif;
   font-size: 20px;
