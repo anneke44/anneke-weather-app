@@ -24,7 +24,6 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    event.target.reset(); // Reset the form after submission
     search();
   }
 
@@ -52,7 +51,7 @@ export default function Weather(props) {
             </div>
             <div className="col-3">
               <input
-                type="button"
+                type="submit"
                 value="Search"
                 className="btn btn-branding"
               />
@@ -60,7 +59,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo weatherData={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast location={weatherData.location} />
       </div>
     );
   } else {
